@@ -19,7 +19,6 @@
 /Users/samarassi/Desktop/BackendDevelopmentCourse/MVC_Ecommerce/Ecommerce/obj/Debug/net10.0/rjimswa.dswa.cache.json
 /Users/samarassi/Desktop/BackendDevelopmentCourse/MVC_Ecommerce/Ecommerce/obj/Debug/net10.0/rjsmrazor.dswa.cache.json
 /Users/samarassi/Desktop/BackendDevelopmentCourse/MVC_Ecommerce/Ecommerce/obj/Debug/net10.0/rjsmcshtml.dswa.cache.json
-/Users/samarassi/Desktop/BackendDevelopmentCourse/MVC_Ecommerce/Ecommerce/obj/Debug/net10.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
 /Users/samarassi/Desktop/BackendDevelopmentCourse/MVC_Ecommerce/Ecommerce/obj/Debug/net10.0/scopedcss/bundle/Ecommerce.styles.css
 /Users/samarassi/Desktop/BackendDevelopmentCourse/MVC_Ecommerce/Ecommerce/obj/Debug/net10.0/scopedcss/projectbundle/Ecommerce.bundle.scp.css
 /Users/samarassi/Desktop/BackendDevelopmentCourse/MVC_Ecommerce/Ecommerce/obj/Debug/net10.0/compressed/9yjqlw3rt0-{0}-61n19gt1b8-61n19gt1b8.gz
@@ -82,8 +81,6 @@
 /Users/samarassi/Desktop/BackendDevelopmentCourse/MVC_Ecommerce/Ecommerce/obj/Debug/net10.0/compressed/jp0mcx2l25-{0}-muycvpuwrr-muycvpuwrr.gz
 /Users/samarassi/Desktop/BackendDevelopmentCourse/MVC_Ecommerce/Ecommerce/obj/Debug/net10.0/compressed/0ea605899c-{0}-87fc7y1x7t-87fc7y1x7t.gz
 /Users/samarassi/Desktop/BackendDevelopmentCourse/MVC_Ecommerce/Ecommerce/obj/Debug/net10.0/compressed/y11gtut0g2-{0}-jfsiqqwiad-jfsiqqwiad.gz
-/Users/samarassi/Desktop/BackendDevelopmentCourse/MVC_Ecommerce/Ecommerce/obj/Debug/net10.0/compressed/2t86g4shzd-{0}-dze1nm61d6-dze1nm61d6.gz
-/Users/samarassi/Desktop/BackendDevelopmentCourse/MVC_Ecommerce/Ecommerce/obj/Debug/net10.0/compressed/zeqtfpxban-{0}-dze1nm61d6-dze1nm61d6.gz
 /Users/samarassi/Desktop/BackendDevelopmentCourse/MVC_Ecommerce/Ecommerce/obj/Debug/net10.0/staticwebassets.build.json
 /Users/samarassi/Desktop/BackendDevelopmentCourse/MVC_Ecommerce/Ecommerce/obj/Debug/net10.0/staticwebassets.build.json.cache
 /Users/samarassi/Desktop/BackendDevelopmentCourse/MVC_Ecommerce/Ecommerce/obj/Debug/net10.0/staticwebassets.development.json
@@ -223,3 +220,6 @@
 /Users/samarassi/Desktop/BackendDevelopmentCourse/MVC_Ecommerce/Ecommerce/bin/Debug/net10.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll
 /Users/samarassi/Desktop/BackendDevelopmentCourse/MVC_Ecommerce/Ecommerce/obj/Debug/net10.0/Ecommerce.csproj.AssemblyReference.cache
 /Users/samarassi/Desktop/BackendDevelopmentCourse/MVC_Ecommerce/Ecommerce/obj/Debug/net10.0/Ecommerce.csproj.Up2Date
+/Users/samarassi/Desktop/BackendDevelopmentCourse/MVC_Ecommerce/Ecommerce/obj/Debug/net10.0/scopedcss/Areas/User/Views/Shared/_Layout.cshtml.rz.scp.css
+/Users/samarassi/Desktop/BackendDevelopmentCourse/MVC_Ecommerce/Ecommerce/obj/Debug/net10.0/compressed/2t86g4shzd-{0}-2vky6drxeh-2vky6drxeh.gz
+/Users/samarassi/Desktop/BackendDevelopmentCourse/MVC_Ecommerce/Ecommerce/obj/Debug/net10.0/compressed/zeqtfpxban-{0}-2vky6drxeh-2vky6drxeh.gz
