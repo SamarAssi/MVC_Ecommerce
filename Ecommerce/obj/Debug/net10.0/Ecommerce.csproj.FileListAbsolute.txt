@@ -221,5 +221,10 @@
 /Users/samarassi/Desktop/BackendDevelopmentCourse/MVC_Ecommerce/Ecommerce/obj/Debug/net10.0/Ecommerce.csproj.AssemblyReference.cache
 /Users/samarassi/Desktop/BackendDevelopmentCourse/MVC_Ecommerce/Ecommerce/obj/Debug/net10.0/Ecommerce.csproj.Up2Date
 /Users/samarassi/Desktop/BackendDevelopmentCourse/MVC_Ecommerce/Ecommerce/obj/Debug/net10.0/scopedcss/Areas/User/Views/Shared/_Layout.cshtml.rz.scp.css
-/Users/samarassi/Desktop/BackendDevelopmentCourse/MVC_Ecommerce/Ecommerce/obj/Debug/net10.0/compressed/2t86g4shzd-{0}-2vky6drxeh-2vky6drxeh.gz
-/Users/samarassi/Desktop/BackendDevelopmentCourse/MVC_Ecommerce/Ecommerce/obj/Debug/net10.0/compressed/zeqtfpxban-{0}-2vky6drxeh-2vky6drxeh.gz
+/Users/samarassi/Desktop/BackendDevelopmentCourse/MVC_Ecommerce/Ecommerce/obj/Debug/net10.0/scopedcss/Areas/Admin/Views/Shared/_Layout.cshtml.rz.scp.css
+/Users/samarassi/Desktop/BackendDevelopmentCourse/MVC_Ecommerce/Ecommerce/obj/Debug/net10.0/compressed/2t86g4shzd-{0}-y257fcwut3-y257fcwut3.gz
+/Users/samarassi/Desktop/BackendDevelopmentCourse/MVC_Ecommerce/Ecommerce/obj/Debug/net10.0/compressed/zeqtfpxban-{0}-y257fcwut3-y257fcwut3.gz
+/Users/samarassi/Desktop/BackendDevelopmentCourse/MVC_Ecommerce/Ecommerce/obj/Debug/net10.0/compressed/hqdby5y584-{0}-n5ymwgq81j-n5ymwgq81j.gz
+/Users/samarassi/Desktop/BackendDevelopmentCourse/MVC_Ecommerce/Ecommerce/obj/Debug/net10.0/compressed/885qv3gi99-{0}-x53r6p9qv8-x53r6p9qv8.gz
+/Users/samarassi/Desktop/BackendDevelopmentCourse/MVC_Ecommerce/Ecommerce/obj/Debug/net10.0/compressed/g649i0na3n-{0}-54r0xfztkw-54r0xfztkw.gz
+/Users/samarassi/Desktop/BackendDevelopmentCourse/MVC_Ecommerce/Ecommerce/obj/Debug/net10.0/compressed/cws0qcx1ot-{0}-54r0xfztkw-54r0xfztkw.gz
