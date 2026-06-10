@@ -7,6 +7,7 @@ public class Product
     public string Description { get; set; } = string.Empty;
     public decimal Price { get; set; }
     public double Rate { get; set; }
+    public int Quantity { get; set; }
     public int CategoryId { get; set; }
     public Category Category { get; set; }
 }

@@ -1,0 +1,45 @@
+@model Product
+
+@section TitleSection {
+    Create
+}
+
+<div class="col-md-12">
+    <div class="card card-primary card-outline mb-4">
+        <div class="card-header">
+            <div class="card-title">Add New Product</div>
+        </div>
+        <form asp-controller="Products" asp-action="Store" method="post">
+            <div class="card-body">
+                <div class="mb-3">
+                    <label asp-for="Name" class="form-label"></label>
+                    <input asp-for="Name" class="form-control" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Description" class="form-label"></label>
+                    <textarea asp-for="Description" class="form-control" aria-describedby="emailHelp"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Price" class="form-label"></label>
+                    <input asp-for="Price" class="form-control" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Quantity" class="form-label"></label>
+                    <input asp-for="Quantity" class="form-control" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label asp-for="CategoryId" class="form-label"></label>
+                    <select class="form-select" asp-for="CategoryId">
+                        @foreach (var category in ViewBag.Categories) 
+                        {
+                            <option value="@category.Id">@category.Name</option>
+                        }
+                    </select>
+                </div>
+            </div>
+            <div class="card-footer">
+                <button type="submit" class="btn btn-primary">Create</button>
+            </div>
+        </form>
+    </div>
+</div>

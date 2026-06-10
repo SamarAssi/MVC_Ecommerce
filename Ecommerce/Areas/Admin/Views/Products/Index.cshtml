@@ -1,12 +1,12 @@
-@model List<Category>
+@model List<Product>
 
 @section TitleSection {
-    Categories
+    Products
 }
 
 <div class="card mb-4">
     <div class="card-header">
-        <h3 class="card-title">Show All Categories</h3>
+        <h3 class="card-title">Show All Products</h3>
     </div>
     <!-- /.card-header -->
     <div class="card-body p-0">
@@ -15,6 +15,8 @@
                 <tr>
                     <th style="width: 10px" scope="col" class="text-center">#</th>
                     <th scope="col" class="text-center">Name</th>
+                    <th scope="col" class="text-center">Price</th>
+                    <th scope="col" class="text-center">Quantity</th>
                     <th scope="col" class="text-center">Action</th>
                 </tr>
             </thead>
@@ -34,9 +36,19 @@
                         </td>
                         <td class="text-center">
                             <div class"d-flex justify-content-center gap-2">
-                                <a asp-controller="Categories" asp-action="Delete" asp-route-id="@item.Id"
+                                @item.Price $
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <div class"d-flex justify-content-center gap-2">
+                                @item.Quantity
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <div class"d-flex justify-content-center gap-2">
+                                <a asp-controller="Products" asp-action="Delete" asp-route-id="@item.Id"
                                    class="btn btn-outline-danger">Delete</a>
-                                <a asp-controller="Categories" asp-action="Edit" asp-route-id="@item.Id"
+                                <a asp-controller="Products" asp-action="Edit" asp-route-id="@item.Id"
                                    class="btn btn-outline-info">Edit</a>
                             </div>
                         </td>
