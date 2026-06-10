@@ -26,5 +26,42 @@ namespace MyApp.Namespace
 
             return RedirectToAction("Index");
         }
+
+        public IActionResult Delete(int id)
+        {
+            var category = _context.Categories.Find(id);
+
+            if (category is null)
+            {
+                return NotFound();
+            }
+
+            _context.Categories.Remove(category);
+            _context.SaveChanges();
+
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult Edit(int id)
+        {
+            var category = _context.Categories.Find(id);
+
+            if (category is null) 
+            {
+                return NotFound();
+            }
+
+            return View(category);
+        }
+
+        public IActionResult Update(Category request, int id) 
+        {
+            request.Id = id;
+
+            _context.Categories.Update(request);
+            _context.SaveChanges();
+
+            return RedirectToAction("Index");
+        }
     }
 }
