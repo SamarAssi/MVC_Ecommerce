@@ -228,3 +228,5 @@
 /Users/samarassi/Desktop/BackendDevelopmentCourse/MVC_Ecommerce/Ecommerce/obj/Debug/net10.0/compressed/885qv3gi99-{0}-x53r6p9qv8-x53r6p9qv8.gz
 /Users/samarassi/Desktop/BackendDevelopmentCourse/MVC_Ecommerce/Ecommerce/obj/Debug/net10.0/compressed/g649i0na3n-{0}-54r0xfztkw-54r0xfztkw.gz
 /Users/samarassi/Desktop/BackendDevelopmentCourse/MVC_Ecommerce/Ecommerce/obj/Debug/net10.0/compressed/cws0qcx1ot-{0}-54r0xfztkw-54r0xfztkw.gz
+/Users/samarassi/Desktop/BackendDevelopmentCourse/MVC_Ecommerce/Ecommerce/obj/Debug/net10.0/compressed/vhr7vv6jxm-{0}-a2xdqx401f-a2xdqx401f.gz
+/Users/samarassi/Desktop/BackendDevelopmentCourse/MVC_Ecommerce/Ecommerce/obj/Debug/net10.0/compressed/5xwmqbiglf-{0}-pc7g18qmml-pc7g18qmml.gz
