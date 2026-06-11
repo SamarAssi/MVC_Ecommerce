@@ -110,6 +110,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvVXNlci9WaWV3cy9TaGFyZWQvRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/samarassi/Desktop/BackendDevelopmentCourse/MVC_Ecommerce/Ecommerce/Areas/User/Views/Shared/_HeadPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvVXNlci9WaWV3cy9TaGFyZWQvX0hlYWRQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/samarassi/Desktop/BackendDevelopmentCourse/MVC_Ecommerce/Ecommerce/Areas/User/Views/Shared/_NavbarPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvVXNlci9WaWV3cy9TaGFyZWQvX05hdmJhclBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/samarassi/Desktop/BackendDevelopmentCourse/MVC_Ecommerce/Ecommerce/Areas/User/Views/Shared/_ScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvVXNlci9WaWV3cy9TaGFyZWQvX1NjcmlwdHNQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/samarassi/Desktop/BackendDevelopmentCourse/MVC_Ecommerce/Ecommerce/Areas/User/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvVXNlci9WaWV3cy9TaGFyZWQvX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
