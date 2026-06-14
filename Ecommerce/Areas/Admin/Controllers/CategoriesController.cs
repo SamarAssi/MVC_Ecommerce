@@ -12,8 +12,13 @@ namespace MyApp.Namespace
         {
             var categories = _context.Categories
                 .AsNoTracking()
+                .Select(category => new IndexCategoryViewModel
+                {
+                    Id = category.Id,
+                    Name = category.Name
+                })
                 .ToList();
-
+                
             return View(categories);
         }
 
@@ -22,9 +27,14 @@ namespace MyApp.Namespace
             return View();
         }
 
-        public IActionResult Store(Category request)
+        public IActionResult Store(CreateCategoryViewModel request)
         {
-            _context.Categories.Add(request);
+            var category = new Category
+            {
+                Name = request.Name
+            };
+
+            _context.Categories.Add(category);
             _context.SaveChanges();
 
             return RedirectToAction("Index");
@@ -49,6 +59,11 @@ namespace MyApp.Namespace
         {
             var category = _context.Categories
                 .AsNoTracking()
+                .Select(category => new EditCategoryViewModel
+                {
+                    Id = category.Id,
+                    Name = category.Name
+                })
                 .FirstOrDefault(category => category.Id == id);
 
             if (category is null) 
@@ -59,11 +74,18 @@ namespace MyApp.Namespace
             return View(category);
         }
 
-        public IActionResult Update(Category request, int id) 
+        public IActionResult Update(EditCategoryViewModel request) 
         {
-            request.Id = id;
+            var category = _context.Categories.Find(request.Id);
 
-            _context.Categories.Update(request);
+            if (category is null)
+            {
+                return NotFound();
+            }
+
+            category.Name = request.Name;
+
+            _context.Categories.Update(category);
             _context.SaveChanges();
 
             return RedirectToAction("Index");

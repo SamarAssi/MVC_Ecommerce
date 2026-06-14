@@ -1,4 +1,4 @@
-@model List<Product>
+@model List<IndexProductViewModel>
 
 @section TitleSection {
     Products
@@ -47,7 +47,7 @@
                         </td>
                         <td class="text-center">
                             <div class"d-flex justify-content-center gap-2">
-                                @item.Category.Name
+                                @item.CategoryName
                             </div>
                         </td>
                         <td class="text-center">

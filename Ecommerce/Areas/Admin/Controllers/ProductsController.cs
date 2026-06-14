@@ -13,6 +13,15 @@ namespace MyApp.Namespace
             var products = _context.Products
                 .Include(product => product.Category)
                 .AsNoTracking()
+                .Select(product => new IndexProductViewModel
+                {
+                    Id = product.Id,
+                    Name = product.Name,
+                    Price = product.Price,
+                    Rate = product.Rate,
+                    Quantity = product.Quantity,
+                    CategoryName = product.Category.Name
+                })
                 .ToList();
 
             return View(products);
@@ -27,9 +36,18 @@ namespace MyApp.Namespace
             return View();
         }
 
-        public IActionResult Store(Product request)
+        public IActionResult Store(CreateProductViewModel request)
         {
-            _context.Products.Add(request);
+            var product = new Product
+            {
+                Name = request.Name,
+                Price = request.Price,
+                Description = request.Description,
+                Quantity = request.Quantity,
+                CategoryId = request.CategoryId
+            };
+
+            _context.Products.Add(product);
             _context.SaveChanges();
 
             return RedirectToAction("Index");
@@ -54,13 +72,22 @@ namespace MyApp.Namespace
         {
             var product = _context.Products
                 .AsNoTracking()
+                .Select(product => new EditProductViewModel
+                {
+                    Id = product.Id,
+                    Name = product.Name,
+                    Description = product.Description,
+                    Price = product.Price,
+                    Quantity = product.Quantity,
+                    CategoryId = product.CategoryId
+                })
                 .FirstOrDefault(product => product.Id == id);
 
             ViewBag.Categories = _context.Categories
                 .AsNoTracking()
                 .ToList();
 
-            if (product is null) 
+            if (product is null)
             {
                 return NotFound();
             }
@@ -68,11 +95,22 @@ namespace MyApp.Namespace
             return View(product);
         }
 
-        public IActionResult Update(Product request, int id) 
+        public IActionResult Update(EditProductViewModel request)
         {
-            request.Id = id;
+            var product = _context.Products.Find(request.Id);
 
-            _context.Products.Update(request);
+            if (product is null)
+            {
+                return NotFound();
+            }
+
+            product.Name = request.Name;
+            product.Price = request.Price;
+            product.Description = request.Description;
+            product.Quantity = request.Quantity;
+            product.CategoryId = request.CategoryId;
+
+            _context.Products.Update(product);
             _context.SaveChanges();
 
             return RedirectToAction("Index");
