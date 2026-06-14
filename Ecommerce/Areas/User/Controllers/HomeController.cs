@@ -1,6 +1,7 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Ecommerce.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace Ecommerce.Controllers.User.Controllers;
 
@@ -10,8 +11,13 @@ public class HomeController : Controller
     ApplicationDbContext _context = new ApplicationDbContext();
     public IActionResult Index()
     {
-        ViewBag.Categories = _context.Categories.ToList();
-        ViewBag.Products = _context.Products.ToList();
+        ViewBag.Categories = _context.Categories
+            .AsNoTracking()
+            .ToList();
+        
+        ViewBag.Products = _context.Products
+            .AsNoTracking()
+            .ToList();
         
         return View();
     }

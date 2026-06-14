@@ -1,5 +1,6 @@
 using Ecommerce;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace MyApp.Namespace
 {
@@ -9,7 +10,9 @@ namespace MyApp.Namespace
         ApplicationDbContext _context = new ApplicationDbContext();
         public IActionResult Index()
         {
-            var categories = _context.Categories.ToList();
+            var categories = _context.Categories
+                .AsNoTracking()
+                .ToList();
 
             return View(categories);
         }
@@ -44,7 +47,9 @@ namespace MyApp.Namespace
 
         public IActionResult Edit(int id)
         {
-            var category = _context.Categories.Find(id);
+            var category = _context.Categories
+                .AsNoTracking()
+                .FirstOrDefault(category => category.Id == id);
 
             if (category is null) 
             {

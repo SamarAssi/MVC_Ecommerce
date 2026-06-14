@@ -1,5 +1,6 @@
 using Ecommerce;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace MyApp.Namespace
 {
@@ -9,14 +10,19 @@ namespace MyApp.Namespace
         ApplicationDbContext _context = new ApplicationDbContext();
         public ActionResult Index()
         {
-            var products = _context.Products.ToList();
+            var products = _context.Products
+                .Include(product => product.Category)
+                .AsNoTracking()
+                .ToList();
 
             return View(products);
         }
 
         public IActionResult Create()
         {
-            ViewBag.Categories = _context.Categories.ToList();
+            ViewBag.Categories = _context.Categories
+                .AsNoTracking()
+                .ToList();
 
             return View();
         }
@@ -46,8 +52,13 @@ namespace MyApp.Namespace
 
         public IActionResult Edit(int id)
         {
-            var product = _context.Products.Find(id);
-            ViewBag.Categories = _context.Categories.ToList();
+            var product = _context.Products
+                .AsNoTracking()
+                .FirstOrDefault(product => product.Id == id);
+
+            ViewBag.Categories = _context.Categories
+                .AsNoTracking()
+                .ToList();
 
             if (product is null) 
             {
